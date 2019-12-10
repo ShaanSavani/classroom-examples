@@ -11,43 +11,28 @@ Simply edit this document and add your code as shown below with the following ru
 5. Keep the problems in alpha order.
 
 ## Example:
-### double
-Create a function that will double the given integer.
+### String-2 > double_char 
+Given a string, return a string where for every char in the original, there are two chars.
 ```
-double(5) -> 10
-double(3) -> 6
-double(0) -> 0
+double_char('The') → 'TThhee'
+double_char('AAbb') → 'AAAAbbbb'
+double_char('Hi-There') → 'HHii--TThheerree'
 ```
 Solutions:
 
 ```python
-def double(n: int) -> int:
-    return n * 2
+def double_char(str):
+  double_char = ''
+  for element in range(len(str)):
+    double_char += str[element]
+    double_char += str[element]
+  return double_char
 ```
-
-```python
-def double(n: int) -> int:
-    return n * 1
-```
-
 End example
 ---
-### double_23
-Given an int array, return true if the array contains 2 twice, or 3 twice. The array will be length 0, 1, or 2.
-
+### double_char('The')
 ```
-double_23([2, 2]) → true
-double_23([3, 3]) → true
-double_23([2, 3]) → false
-```
-Solutions:
-
-```python
-def double_23(list_1: list) -> bool:
-    if list_1[0] == 2 and list_1[1] == 2:
-        return True
-    elif list_1[0] == 3 and list_1[1] == 3:
-        return True
-    else:
-        return False
-```
+double_char('The') → 'TThhee'
+double_char('AAbb') → 'AAAAbbbb'
+double_char('Hi-There') → 'HHii--TThheerree'
+`
